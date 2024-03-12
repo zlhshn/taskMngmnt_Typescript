@@ -3,7 +3,7 @@ interface ITodoType {
     isDone: boolean;
     task?: string;
     todo: string;
-    date?: Date;
+    date?: number;
   }
  
 

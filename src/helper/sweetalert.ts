@@ -18,7 +18,7 @@ export enum SweetAlertIcons {
     position: SweetPosition
   ) =>
     Swal.fire({
-      title: "Anthony Todo App!",
+      title: "Todo App!",
       text: msg,
       icon: icon,
       timer: 3000,

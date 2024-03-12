@@ -8,13 +8,13 @@ export const todosApi = createApi({
     tagTypes: ["Todos"], 
     endpoints: (builder) => ({
       getTodos: builder.query<ITodoType[], void>({
-        query: () => "todos",
+        query: () => "todo",
         providesTags: ["Todos"],
       }),
       addTodo: builder.mutation({
         
         query: (text: string) => ({
-          url: "todos",
+          url: "todo",
           method: "POST",
           body: { todo: text, isDone: false },
         }),
@@ -38,7 +38,7 @@ export const todosApi = createApi({
       }),
       toggleTodo: builder.mutation({
         query: (todo: ITodoType) => ({
-          url: `todos/${todo.id}`,
+          url: `todo/${todo.id}`,
           method: "PUT",
           body: { ...todo, isDone: !todo.isDone },
         }),
@@ -62,7 +62,7 @@ export const todosApi = createApi({
       }),
       deleteTodo: builder.mutation({
         query: (id: string | number) => ({
-          url: `todos/${id}`,
+          url: `todo/${id}`,
           method: "DELETE",
         }),
         invalidatesTags: ["Todos"],
