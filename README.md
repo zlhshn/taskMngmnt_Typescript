@@ -3,7 +3,7 @@
 This project was created using react, vite and typescript, and includes adding, deleting, and categorizing tasks as completed or inprogres.Rtk Query was used in data exchange management.
 
 ## Project Live Page
-[TaskManagement Live Page]()
+[TaskManagement Live Page](https://task-mngmnt-type-zlhshn.vercel.app/)
 
 ## Project Outcome
 ![taskmanagement](tasktype.gif)
