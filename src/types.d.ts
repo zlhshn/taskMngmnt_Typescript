@@ -1,10 +1,9 @@
 interface ITodoType {
-    id: string | number;
-    isDone: boolean;
-    task?: string;
-    todo: string;
-    date?: number;
-  }
+  todo: string;
+  isDone: boolean;
+  id: string | number;
+  task?: string; 
+}
  
 
  

@@ -1,30 +1,23 @@
-# React + TypeScript + Vite
+## Task Managament App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project was created using react, vite and typescript, and includes adding, deleting, and categorizing tasks as progress or inprogres.Rtk Query was used in data exchange management.
 
-Currently, two official plugins are available:
+## Project Live Page
+[TaskManagement Live Page]()
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Project Outcome
+![taskmanagement](tasktype.gif)
 
-## Expanding the ESLint configuration
+## Tech/Framework used
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+**_React.js_** : Created the project using the JavaScript framework React.React is a JavaScript library used for creating user interfaces. react-dom is used to <br>
+**_Reduxjs/toolkit_** : Redux Toolkit is a library that enables faster and more efficient use of Redux. It simplifies global state management using Redux. <br>
+**_React-redux_**: React Redux is a library that facilitates the integration of React and Redux. It is used for global state management in React <br>
+**_Axios_**:It used for managing API requests and CRUD operations.<br>
+**_RTK Query_**: RTK Query is part of Redux Toolkit and is a library used for data fetching. It simplifies interaction with APIs and facilitates data exchange. RTK Query comes with features provided by Redux Toolkit, simplifying data management.<br>
+***_Material-UI_***: Material-UI is a library used for creating user interfaces in React applications. It provides components and styles that adhere to the principles of Material Design.<br>
+***TypeScript***: TypeScript is a programming language based on JavaScript, used to provide type safety, better IDE support, and improved code understanding in JavaScript projects.
 
-- Configure the top-level `parserOptions` property like this:
+## API Reference
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+https://65b384d3770d43aba479ec91.mockapi.io/

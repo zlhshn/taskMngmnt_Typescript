@@ -4,7 +4,7 @@ import "./style.css";
 import { useGetTodosQuery } from "../service/todos";
 
 const ToDoList = () => {
-  const { data: todos, isLoading, error} = useGetTodosQuery();
+  const { data: todos, isLoading, error } = useGetTodosQuery();
 
   const progressTodos = todos?.filter((todo) => !todo.isDone);
   const completedTodos = todos?.filter((todo) => todo.isDone);
@@ -48,19 +48,15 @@ const ToDoList = () => {
                 variant="h4"
                 className="title"
               >
-                InProgress Todos
+                InProgress Task
               </Typography>
               {progressTodos?.length ? (
                 progressTodos.map((todo) => (
-                  <TodoListItem
-                    key={todo.id}
-                    todo={todo}
-                 
-                  />
+                  <TodoListItem key={todo.id} todo={todo} />
                 ))
               ) : (
-                <Typography color="error" mt={3}>
-                  No Progress Todos!
+                <Typography color="error" margin={"1rem"}>
+                  No Progress Task!
                 </Typography>
               )}
             </Grid>
@@ -86,19 +82,15 @@ const ToDoList = () => {
                 variant="h4"
                 className="title"
               >
-                Completed Todos
+                Completed Task
               </Typography>
               {completedTodos?.length ? (
                 completedTodos.map((todo) => (
-                  <TodoListItem
-                    key={todo.id}
-                    todo={todo}
-                   
-                  />
+                  <TodoListItem key={todo.id} todo={todo} />
                 ))
               ) : (
-                <Typography color="error" mt={3}>
-                  No Completed Todos!
+                <Typography color="error" margin={"1rem"}>
+                  No Completed Task!
                 </Typography>
               )}
             </Grid>

@@ -6,11 +6,16 @@ import { useGetTodosQuery } from "../service/todos";
 
 const Home = () => {
   const { data } = useGetTodosQuery();
-  console.log(data);
 
   return (
     <Container>
-      <Typography color="purple" align="center" component="h1" variant="h3">
+      <Typography
+        color="purple"
+        align="center"
+        component="h1"
+        variant="h3"
+        margin={"3rem"}
+      >
         TASK MANAGEMENT APP
       </Typography>
       <AddTodo />

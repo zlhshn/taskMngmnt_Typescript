@@ -7,7 +7,6 @@ import { useDeleteTodoMutation, useToggleTodoMutation } from "../service/todos";
 
 interface ITodoListItem {
   todo: ITodoType;
-
 }
 
 const TodoListItem: FC<ITodoListItem> = ({ todo }) => {
@@ -25,7 +24,7 @@ const TodoListItem: FC<ITodoListItem> = ({ todo }) => {
     >
       <ListItemText
         onClick={() => toggleTodo(todo)}
-        primary={todo.task || todo.todo}
+        primary={todo.todo || todo.task}
         sx={{ wordWrap: "break-word" }}
       />
     </ListItem>
