@@ -1,6 +1,6 @@
 ## Task Managament App
 
-This project was created using react, vite and typescript, and includes adding, deleting, and categorizing tasks as progress or inprogres.Rtk Query was used in data exchange management.
+This project was created using react, vite and typescript, and includes adding, deleting, and categorizing tasks as completed or inprogres.Rtk Query was used in data exchange management.
 
 ## Project Live Page
 [TaskManagement Live Page]()
