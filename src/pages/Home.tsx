@@ -6,7 +6,7 @@ import { useGetTodosQuery } from "../service/todos";
 
 const Home = () => {
   const { data } = useGetTodosQuery();
-
+  console.log(data);
   return (
     <Container>
       <Typography
